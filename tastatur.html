@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="yellow box" onclick="changeText1(this)">A</div>
+    <div class="cyan box" onclick="changeText2(this)">B</div>
+    <div class="green box" onclick="changeText3(this)">C</div>    
+</body>
+<script>
+    function changeText1(element){
+        element.innerHTML = 'du'
+    }
+    function changeText2(element){
+        element.innerHTML = 'er'
+}
+    function changeText3(element){
+        element.innerHTML = 'flink'
+}
+</script>
+<style>
+    .box{
+        height: 150px;
+        width: 150px;
+        font-size: 4em;
+        text-align: center;
+        float: left;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+    .cyan{
+        background-color: cyan;
+    }
+    .green{
+        background-color: green;
+    }
+</style>
+</html>
